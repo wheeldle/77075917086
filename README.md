@@ -69,8 +69,10 @@ and multiply those frequency counts, choosing 3 if it ends in a letter, or choos
  And we're done! Guess what that number is ?
  
     > words <-readLines("wordle.txt" , n = -1)
-    > startsWith <- tabulate(charmatch(substr(lines,1,1), letters))
-    > endsWith <- tabulate(charmatch(substr(lines,5,5), letters))
+    > startsWith <- tabulate(charmatch(substr(words,1,1), letters))
+    > endsWith <- tabulate(charmatch(substr(words,5,5), letters))
     > numgames<-sum(choose(endsWith,3) * choose(startsWith,2))
     > print(numgames)
     77075917086
+    
+ That's enough math for the day, lets play [Wheeldle!](https://wheeldle.us)
