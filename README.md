@@ -13,6 +13,11 @@ Wheeldle looks like this:
 
 ![Wheeldle!](https://avatars.githubusercontent.com/u/102187509?s=400&u=3837a0ec18ffd22b23d54e562d64c7bb9ab8c84b&v=4 "Wheeldle")
 
+
+So we have 3 words that end in a common letter.   
+And two words that start with the same common letter.
+
+
 1. Superbad Estimate (upper bound): We have 21 characters in the wheel. There are 26 letters in the alphabet. So 21^26.
 
     > 21^26    
