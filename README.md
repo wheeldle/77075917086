@@ -53,7 +53,21 @@ then match these to the letters (helpfully called letters in R! ) in the alphabe
 
     > charmatch(substr(words,1,1), letters)
     
-and run a frequency count for each letter:
+Can we look at a picture to see how many words start with each letter ?
+
+    > barplot(table(letters[charmatch(substr(words,1,1), letters)]))
+    
+ ![Wheeldle!](https://raw.githubusercontent.com/wheeldle/77075917086/main/startsWith.png)
+ 
+And here's one of the number of words ending with each letter:
+
+    > barplot(table(letters[charmatch(substr(words,5,5), letters)]))
+    
+ ![Wheeldle!](https://raw.githubusercontent.com/wheeldle/77075917086/main/endsWith.png)
+ 
+We see a lot of words ending with E and Y. S starts the most words. Close to zero words start/end with Z.
+    
+Let's run a frequency count for each letter:
 
     > startsWith <- tabulate(charmatch(substr(words,1,1), letters))
     > endsWith <- tabulate(charmatch(substr(words,5,5), letters))
